@@ -1,0 +1,221 @@
+/* =====================================
+   Reset default browser styles
+===================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================
+   Base Styles
+===================================== */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* =====================================
+   Header & Navigation
+===================================== */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Navigation list styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+/* Navigation link styles */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Highlight the active page */
+nav ul li a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* =====================================
+   Hero Section
+===================================== */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e2e2e2;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* =====================================
+   Affiliate Section and Cards
+===================================== */
+.affiliate {
+  padding: 50px 20px;
+}
+
+.affiliate h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Container for affiliate cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual affiliate card */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 15px 0;
+}
+
+.card p {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* =====================================
+   Library Section (Homepage)
+===================================== */
+.library {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e2e2e2;
+}
+
+/* =====================================
+   About, Contact & Library Content Sections
+===================================== */
+.about, .contact, .library-content {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2, .contact h2, .library-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* =====================================
+   Contact Form Styles
+===================================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+}
+
+/* =====================================
+   Articles in Library Section
+===================================== */
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.articles article {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* =====================================
+   Footer
+===================================== */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* =====================================
+   Responsive Styles
+===================================== */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  .articles {
+    flex-direction: column;
+  }
+}
